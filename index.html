@@ -3,88 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Школьная кафедра</title>
-    <!-- Подключение шрифтов Google -->
+    <title>Школьная Кафедра</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Подключение иконок FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Подключение стилей -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #4daf54, #3d8890);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e4e4e4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .faq-item h3 {
+            color: #3d8890;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #3d8890;
+            color: white;
+            margin-top: 20px;
+        }
+        .download-section {
+            text-align: center;
+        }
+        .download-logo {
+            display: inline-block;
+            margin: 10px;
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Заголовок сайта -->
     <header>
-        <div class="container">
-            <h1>Школьная кафедра</h1>
-            <p>Проект для школьников и преподавателей. Обучение, общение и развитие!</p>
-        </div>
+        <h1>Школьная Кафедра</h1>
+        <p>Обучение, общение и развитие в одном месте!</p>
     </header>
 
-    <!-- Представление о пользователе -->
-    <section id="about-me">
-        <div class="container">
-            <h2>О проекте и авторе</h2>
-            <div class="profile">
-                <div class="profile-info">
-                    <p>Меня зовут <strong>Тхань</strong>, и я создал проект <strong>"Школьная кафедра"</strong> для того, чтобы объединить школьников и преподавателей в одном удобном месте для общения, обучения и планирования.</p>
-                    <p>Мой проект включает в себя:</p>
-                    <ul>
-                        <li>Чат с искусственным интеллектом (ИИ), который поможет вам с вопросами и заданиями.</li>
-                        <li>Функцию создания и публикации постов для обмена идеями.</li>
-                        <li>Календарь с напоминаниями о дедлайнах и важных событиях.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <h2>О проекте и авторе</h2>
+        <p>Привет! Меня зовут <strong>Тхань</strong>, и я создал "Школьную Кафедру" — платформу для школьников и учителей.</p>
+        <ul>
+            <li>Чат с искусственным интеллектом (ИИ) для помощи в учебе.</li>
+            <li>Создание и публикация постов.</li>
+            <li>Календарь с напоминаниями о дедлайнах.</li>
+        </ul>
+    </div>
 
-    <!-- Описание проекта -->
-    <section id="about-project">
-        <div class="container">
-            <h2>О проекте</h2>
-            <p>Проект "Школьная кафедра" был создан для улучшения процесса обучения. Мы предлагаем:</p>
-            <ul>
-                <li>Возможность общения с ИИ для решения учебных вопросов.</li>
-                <li>Создание постов, где можно делиться идеями и обсуждать важные темы.</li>
-                <li>Интуитивно понятный календарь для планирования задач и отслеживания дедлайнов.</li>
-            </ul>
+    <div class="container">
+        <h2>Часто задаваемые вопросы (FAQ)</h2>
+        <div class="faq-item">
+            <h3><i class="fas fa-question-circle"></i> Как написать сообщение с ИИ?</h3>
+            <p>Перейдите в раздел сообщений и начните чат с ИИ.</p>
         </div>
-    </section>
-
-    <!-- FAQ раздел -->
-    <section id="faq">
-        <div class="container">
-            <h2>FAQ - Часто задаваемые вопросы</h2>
-            <div class="faq-item">
-                <h3><i class="fas fa-question-circle"></i> Как написать сообщение с ИИ?</h3>
-                <p>Для этого перейдите в раздел сообщений и начните чат с ИИ. Он будет отвечать на ваши вопросы и помогать решать проблемы.</p>
-            </div>
-            <div class="faq-item">
-                <h3><i class="fas fa-question-circle"></i> Как создать пост?</h3>
-                <p>Перейдите в раздел "Публикации", напишите ваш пост и нажмите "Опубликовать". Делитесь знаниями и учитесь вместе с нами!</p>
-            </div>
-            <div class="faq-item">
-                <h3><i class="fas fa-question-circle"></i> Как использовать календарь?</h3>
-                <p>В календаре вы можете добавлять дедлайны для ваших заданий, и мы будем напоминать вам о важных датах.</p>
-            </div>
+        <div class="faq-item">
+            <h3><i class="fas fa-question-circle"></i> Как создать пост?</h3>
+            <p>Перейдите в раздел "Публикации" и напишите свой пост.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Ссылка на Google Play -->
-    <section id="download">
-        <div class="container">
-            <h2>Скачайте приложение</h2>
-            <p>Наше приложение доступно для скачивания на Google Play! Начните использовать все функции прямо сейчас.</p>
-            <a href="https://play.google.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Google_Play_Logo_2015.png" alt="Google Play" class="google-play-logo">
-            </a>
-        </div>
-    </section>
+    <div class="container download-section">
+        <h2>Скачайте приложение</h2>
+        <p>Наше приложение пока доступно только в RuStore! Начните использовать все функции прямо сейчас.</p>
+        <a href="https://www.rustore.ru/catalog/app/ru.kappyforum.kappyforum" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Google_Play_Logo_2015.png" alt="Google Play" class="download-logo">
+        </a>
+        <a href="https://www.rustore.ru/catalog/app/ru.kappyforum.kappyforum" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/RuStore_logo.svg" alt="RuStore" class="download-logo">
+        </a>
+    </div>
 
-    <!-- Подвал -->
     <footer>
-        <p>© 2025 Школьная кафедра. Все права защищены.</p>
+        <p>© 2025 Школьная Кафедра. Все права защищены.</p>
     </footer>
 
 </body>
