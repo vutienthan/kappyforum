@@ -16,10 +16,10 @@
             color: #333;
         }
         header {
-            background: linear-gradient(135deg, #4daf54, #3d8890);
+            background: linear-gradient(135deg, #d32f2f, #ff5252);
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
         }
         .container {
             width: 80%;
@@ -39,29 +39,37 @@
             padding: 0;
         }
         ul li {
-            background: #e4e4e4;
+            background: #ffe0e0;
             margin: 5px 0;
             padding: 10px;
             border-radius: 5px;
         }
         .faq-item h3 {
-            color: #3d8890;
+            color: #d32f2f;
             cursor: pointer;
         }
         footer {
             text-align: center;
             padding: 15px;
-            background: #3d8890;
+            background: #d32f2f;
             color: white;
             margin-top: 20px;
         }
-        .download-section {
+        .download-section, .project-info {
             text-align: center;
         }
         .download-logo {
             display: inline-block;
             margin: 10px;
             width: 150px;
+        }
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -72,37 +80,50 @@
         <p>Обучение, общение и развитие в одном месте!</p>
     </header>
 
-    <div class="container">
-        <h2>О проекте и авторе</h2>
-        <p>Привет! Меня зовут <strong>Тхань</strong>, и я создал "Школьную Кафедру" — платформу для школьников и учителей.</p>
+    <div class="container project-info">
+        <h2>🔥 О твоем проекте – KappyForum</h2>
+        <p><strong>KappyForum</strong> — это <strong>кроссплатформенное приложение</strong> на <strong>Dart/Flutter</strong>, предназначенное для iOS и Android. Оно объединяет социальные функции, чат с ИИ, календарь, систему экстренного вызова и другие полезные инструменты для пользователей.</p>
+        <h3>🚀 Основные функции KappyForum</h3>
         <ul>
-            <li>Чат с искусственным интеллектом (ИИ) для помощи в учебе.</li>
-            <li>Создание и публикация постов.</li>
-            <li>Календарь с напоминаниями о дедлайнах.</li>
+            <li>1️⃣ <strong>Чат с искусственным интеллектом (ИИ)</strong>: Поддержка <strong>DeepSeek, GigaChat</strong> и других моделей, сохранение сообщений через <strong>Firebase</strong>, запоминание контекста сообщений (в будущем).</li>
+            <li>2️⃣ <strong>Экстренный вызов</strong>: Быстрый доступ к номерам <strong>МЧС, полиции, скорой помощи</strong>, возможность добавить <strong>контакт классного руководителя</strong>.</li>
+            <li>3️⃣ <strong>Переводчик</strong>: Использует библиотеку <code>translator</code>, поддерживает различные языки.</li>
+            <li>4️⃣ <strong>Календарь со списком дел</strong>: Возможность добавлять задачи и напоминания, синхронизация с <strong>Firebase</strong>.</li>
+            <li>5️⃣ <strong>Поддержка автора</strong>: Возможность донатов через <strong>TON, Bitcoin</strong>.</li>
+            <li>6️⃣ <strong>Социальные функции</strong> (в разработке): <strong>Личный и групповой чат</strong>, <strong>добавление друзей</strong> и взаимодействие с ними.</li>
+        </ul>
+        <h3>🛠 Технологический стек</h3>
+        <ul>
+            <li><strong>Dart/Flutter</strong> — для кроссплатформенной разработки.</li>
+            <li><strong>Python/Flask</strong> — для работы с ИИ.</li>
+            <li><strong>Firebase</strong> — для хранения данных, чатов и аутентификации.</li>
+            <li><strong>VPS</strong> — для стабильной работы серверов ИИ.</li>
+        </ul>
+        <h3>🚀 Будущие планы на KappyForum</h3>
+        <ul>
+            <li>✔️ Доработка системы чатов (личные, групповые).</li>
+            <li>✔️ Улучшение ИИ (запоминание диалогов).</li>
+            <li>✔️ Дополнительные социальные функции.</li>
+            <li>✔️ Оптимизация и выход в новые магазины приложений.</li>
         </ul>
     </div>
 
-    <div class="container">
-        <h2>Часто задаваемые вопросы (FAQ)</h2>
-        <div class="faq-item">
-            <h3><i class="fas fa-question-circle"></i> Как написать сообщение с ИИ?</h3>
-            <p>Перейдите в раздел сообщений и начните чат с ИИ.</p>
-        </div>
-        <div class="faq-item">
-            <h3><i class="fas fa-question-circle"></i> Как создать пост?</h3>
-            <p>Перейдите в раздел "Публикации" и напишите свой пост.</p>
-        </div>
+    <div class="container download-section">
+        <h2>📲 Где скачать приложение?</h2>
+        <p>Пока <strong>KappyForum</strong> доступен только в <strong>RuStore</strong>:</p>
+        <a href="https://www.rustore.ru/catalog/app/ru.kappyforum.kappyforum" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKS7xJ2cU3vQzdcVrJbMxQYJ-3DrCWjHpynQ&s" alt="RuStore" class="download-logo">
+        </a>
     </div>
 
-    <div class="container download-section">
-        <h2>Скачайте приложение</h2>
-        <p>Наше приложение пока доступно только в RuStore! Начните использовать все функции прямо сейчас.</p>
-        <a href="https://www.rustore.ru/catalog/app/ru.kappyforum.kappyforum" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Google_Play_Logo_2015.png" alt="Google Play" class="download-logo">
-        </a>
-        <a href="https://www.rustore.ru/catalog/app/ru.kappyforum.kappyforum" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/RuStore_logo.svg" alt="RuStore" class="download-logo">
-        </a>
+    <div class="container contact">
+        <h2>👤 О создателе</h2>
+        <p><strong>Имя:</strong> Тхань </p>
+        <p><strong>Возраст:</strong> 16 лет</p>
+        <p><strong>Разработчик Flutter/Dart</strong></p>
+        <p><strong>Интересуется ИИ, безопасностью данных и соцсетями</strong></p>
+        <p><strong>Email:</strong> <a href="mailto:thanhmos1858@gmail.com">thanhmos1858@gmail.com</a></p>
+        <p><strong>Telegram:</strong> <a href="https://t.me/thanhmos1858" target="_blank">@thanhmos1858</a></p>
     </div>
 
     <footer>
